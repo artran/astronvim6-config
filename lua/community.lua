@@ -31,4 +31,5 @@ return {
   { import = "astrocommunity.pack.terraform" },
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.terminal-integration.toggleterm-manager-nvim" },
+  -- { import = "astrocommunity.test.neotest" },
 }
