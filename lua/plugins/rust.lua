@@ -1,20 +1,9 @@
 return {
   {
     "mrcjkb/rustaceanvim",
-    version = "^5",
-    lazy = false,
-    config = function()
-      vim.g.rustaceanvim = {
-        server = {
-          default_settings = {
-            ["rust-analyzer"] = {
-              checkOnSave = {
-                command = "clippy",
-              },
-            },
-          },
-        },
-      }
-    end,
+    keys = {
+      { "<Leader>rt", "<Cmd>RustLsp testables<CR>", desc = "Run tests" },
+      { "<Leader>rT", "<Cmd>RustLsp! testables<CR>", desc = "Re-run last tests" },
+    },
   },
 }
